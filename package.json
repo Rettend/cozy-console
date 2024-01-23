@@ -1,0 +1,42 @@
+{
+  "name": "@cozy-console/monorepo",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "packageManager": "pnpm@8.10.0",
+  "description": "[description]",
+  "author": "Rettend",
+  "license": "MIT",
+  "scripts": {
+    "build": "unbuild",
+    "dev": "tsx ./scripts/dev.ts",
+    "test": "vitest",
+    "test:ui": "vitest --ui --coverage --api 9527",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit",
+    "release": "bumpp && unbuild && pnpm publish",
+    "prepare": "simple-git-hooks && eemoji init -c none"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.6.3",
+    "@types/node": "^20.8.9",
+    "@vitest/coverage-istanbul": "^1.2.1",
+    "@vitest/ui": "^1.2.1",
+    "bumpp": "^9.2.0",
+    "eemoji": "^1.1.5",
+    "eslint": "^8.56.0",
+    "lint-staged": "^15.2.0",
+    "simple-git-hooks": "^2.9.0",
+    "tsx": "^4.7.0",
+    "typescript": "5.3.3",
+    "unbuild": "^2.0.0",
+    "vitest": "^1.2.1"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}

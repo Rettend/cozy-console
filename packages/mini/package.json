@@ -1,0 +1,34 @@
+{
+  "name": "@cozy-console/mini",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "[description]",
+  "author": "Rettend",
+  "license": "MIT",
+  "homepage": "https://github.com/Rettend/cozy-console/tree/main/packages/mini#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rettend/cozy-console.git",
+    "directory": "packages/mini"
+  },
+  "bugs": "https://github.com/Rettend/cozy-console/issues",
+  "keywords": [
+    "console",
+    "tiny console library",
+    "console log"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+  }
+}

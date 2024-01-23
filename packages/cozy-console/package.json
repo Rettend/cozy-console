@@ -1,0 +1,33 @@
+{
+  "name": "cozy-console",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "[description]",
+  "author": "Rettend",
+  "license": "MIT",
+  "homepage": "https://github.com/Rettend/cozy-console#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rettend/cozy-console.git"
+  },
+  "bugs": "https://github.com/Rettend/cozy-console/issues",
+  "keywords": [
+    "console",
+    "console library",
+    "console log"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+  }
+}
