@@ -15,7 +15,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc --noEmit",
-    "release": "bumpp -r && unbuild && pnpm publish",
+    "release": "bumpp -r && unbuild && pnpm -r publish --access public",
     "prepare": "simple-git-hooks && eemoji init -c none"
   },
   "devDependencies": {
